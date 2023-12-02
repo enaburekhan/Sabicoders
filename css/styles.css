@@ -92,7 +92,6 @@ nav {
 }
 
 .nav-bottom {
-  /* border: 1px solid black; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -105,19 +104,17 @@ nav {
 }
 
 /* ---main section--- */
+
 .main-section {
-  /* border: 1px solid red; */
   height: auto;
   background-color: #fcfcfc;
 }
 
 .main-image-container {
-  /* position: relative; */
   display: flex;
   justify-content: center;
   align-items: center;
   height: 50%;
-  /* height: 20vh; */
 }
 
 .main-image {
@@ -139,6 +136,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 2rem 5rem 1rem;
 }
 
 .content-container {
@@ -150,7 +148,6 @@ nav {
 .content-container div {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
 }
 
@@ -168,4 +165,41 @@ nav {
   font-size: 14px;
   color: #333;
   font-weight: 400;
+}
+
+.third-main-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0rem 0rem 5rem;
+  background-color: #e27f65;
+}
+
+.second-main-image {
+  max-width: 80%;
+  height: 80vh;
+  background-size: contain;
+  border-radius: 50%;
+  margin: 0 -8rem 0 0;
+}
+
+.third-main-section p {
+  color: #fff;
+}
+
+.third-main-section a {
+  display: inline-block;
+  color: #e27f65;
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+  border-radius: 2px;
+}
+
+.find-course-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 13vh;
 }

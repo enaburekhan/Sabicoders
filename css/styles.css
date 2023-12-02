@@ -15,9 +15,18 @@ a {
   text-decoration: none;
 }
 
+/* ---header section--- */
+
 .header-container {
   display: flex;
   flex-direction: column;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000; /* Ensure the navbar is on top */
 }
 
 nav {
@@ -63,7 +72,11 @@ nav {
   position: relative;
   left: 14rem;
   top: -2rem;
-  color: #0a5cd3;
+  color: #fff;
+}
+
+.search-bar-input {
+  color: #fff;
 }
 
 .nav-top-right {
@@ -84,5 +97,75 @@ nav {
   justify-content: space-between;
   align-items: center;
   width: 40%;
-  color: #768899;
+  color: #fff;
+}
+
+.nav-bottom a {
+  color: #fff;
+}
+
+/* ---main section--- */
+.main-section {
+  /* border: 1px solid red; */
+  height: auto;
+  background-color: #fcfcfc;
+}
+
+.main-image-container {
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  /* height: 20vh; */
+}
+
+.main-image {
+  position: relative;
+  max-width: 100%;
+  height: 92vh;
+  background-size: contain;
+}
+
+.main-section h1 {
+  position: absolute;
+  top: 60%;
+  left: 30%;
+  color: rgb(228, 80, 80);
+}
+
+.second-main-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.content-container div {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.simple-steps {
+  color: rgb(228, 80, 80);
+}
+
+.p-content {
+  font-size: 18px;
+  color: #333;
+  font-weight: 500;
+}
+
+.content-container p {
+  font-size: 14px;
+  color: #333;
+  font-weight: 400;
 }

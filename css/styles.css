@@ -203,3 +203,50 @@ nav {
   align-items: flex-start;
   height: 13vh;
 }
+
+.find-course-content {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.find-course-container button {
+  border: #0a5cd3;
+}
+
+.fourth-main-section {
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 11rem 1rem 5rem;
+}
+
+.fourth-main-section p {
+  color: #fff;
+}
+
+.fourth-main-section button {
+  color: #fff;
+  background-color: #0a5cd3;
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+  border-radius: 2px;
+}
+
+.fourth-main-section img {
+  border-radius: 50%;
+  border: none;
+}
+
+.fifth-main-section {
+  background-color: #e4eef7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 11rem 1rem 5rem;
+}
+
+.fifth-main-section img {
+  border-radius: 50%;
+  height: 50vh;
+}

@@ -35,14 +35,12 @@ nav {
 }
 
 .nav-top {
-  /* border: 1px solid red; */
   display: flex;
   justify-content: space-between;
   align-content: center;
 }
 
 .nav-top-left {
-  /* border: 1px solid pink; */
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -249,4 +247,22 @@ nav {
 .fifth-main-section img {
   border-radius: 50%;
   height: 50vh;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+.footer-icons a {
+  color: #333;
+}
+
+.footer-icons span {
+  display: inline-block;
+  padding: 0 1rem;
 }

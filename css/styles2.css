@@ -20,6 +20,8 @@
   --flex-direction-column: column;
   --position-relative: relative;
   --position-absolute: absolute;
+  --d-none: none;
+  --d-block: block;
 }
 
 html,
@@ -39,7 +41,6 @@ a {
   background-color: var(--dark-color);
   color: var(--white-color);
   padding: 10px;
-  position: fixed;
   width: 100%;
   top: 0;
   z-index: 1000; /* Ensure the navbar is on top */
@@ -182,7 +183,7 @@ main {
 }
 
 .main-section-4 form label {
-  width: 20%;
+  width: 30%;
 }
 
 .submit-button {
@@ -212,4 +213,117 @@ footer {
 .footer-icons span {
   display: inline-block;
   padding: 0 1rem;
+}
+
+/* Media Queries */
+
+@media screen and (width <= 925px) {
+  /* Adjustments for screens 925 pixels and smaller */
+
+  .search-bar .position {
+    left: 10rem;
+  }
+}
+
+@media screen and (width <= 768px) {
+  /* Adjustments for screens 768 pixels and smaller */
+
+  /* --header section-- */
+
+  .header-container {
+    padding: 0 10px;
+  }
+
+  .nav-top {
+    max-width: auto;
+    display: var(--d-flex);
+    justify-content: var(--j-content-space-between);
+    align-items: var(--align-items-center);
+  }
+
+  .nav-top-left {
+    width: auto;
+    align-items: flex-end;
+  }
+
+  .nav-top-left span {
+    font-size: 1.5rem;
+  }
+
+  .search-bar {
+    display: var(--d-none);
+  }
+
+  .dropbtn {
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    border: 1px solid;
+    display: none;
+    position: var(--position-absolute);
+    background-color: var(--white-color);
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%);
+    z-index: 1;
+    opacity: 0.5;
+  }
+
+  .dropdown-content a {
+    color: var(--dark-color);
+    font-weight: 700;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: var(--d-block);
+  }
+
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: var(--d-block);
+  }
+
+  .dropdown:hover .dropbtn {
+    background-color: var(--dark-color);
+  }
+
+  .nav-top-right {
+    width: 100%;
+    align-items: var(--align-items-center);
+    justify-content: flex-end;
+    margin: 0;
+  }
+
+  .nav-top-right select option {
+    background-color: transparent;
+    opacity: 0.5;
+  }
+
+  .nav-bottom {
+    display: var(--d-none);
+  }
+
+  .footer-icons {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (width <= 480px) {
+  /* Adjustments for screens 480 pixels and smaller */
+
+  footer {
+    flex-direction: var(--flex-direction-column);
+  }
 }

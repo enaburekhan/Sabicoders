@@ -22,6 +22,7 @@
   --position-absolute: absolute;
   --d-none: none;
   --d-block: block;
+  --outline-focus: focus;
 }
 
 html,
@@ -184,6 +185,14 @@ main {
 
 .main-section-4 form label {
   width: 30%;
+}
+
+.main-section-4 form input:focus {
+  outline: var(--outline-focus);
+}
+
+.main-section-4 form textarea:focus {
+  outline: var(--outline-focus);
 }
 
 .submit-button {

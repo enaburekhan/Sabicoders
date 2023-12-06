@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sabicoders</title>
+    <link rel="stylesheet" href="../css/styles3.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/688a35b1eb.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header-container">
+      <nav>
+        <div class="nav-top">
+          <div class="nav-top-left">
+            <span>Sabicoders</span>
+            <div class="search-bar">
+              <input
+                type="text"
+                placeholder="Search by key word"
+                class="search-bar-input"
+              />
+              <i style="font-size: 24px" class="fa position">&#xf002;</i>
+            </div>
+          </div>
+          <form class="nav-top-right">
+            <select name="language">
+              <option value="english" selected>English</option>
+              <option value="french">French</option>
+            </select>
+            <div>
+              <i class="material-icons">&#xe7f5;</i>
+            </div>
+          </form>
+        </div>
+        <div>
+          <div class="nav-bottom">
+            <a href="index.html">
+              <span>Home</span>
+            </a>
+            <a href="about.html">
+              <span>About Us</span>
+            </a>
+            <a href="courses.html">
+              <span>Courses</span>
+            </a>
+            <a href="">
+              <span>Course details</span>
+            </a>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Dropdown</button>
+            <div class="dropdown-content">
+              <a href="index.html">Home</a>
+              <a href="about.html">About</a>
+              <a href="courses.html">Courses</a>
+              <a href="#">Course details</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="main-section-1">
+        <h1>Filter By language, level, course, duration and skills.</h1>
+        <form>
+          <select name="language">
+            <option value="language" selected>Language</option>
+            <option value="english">English</option>
+            <option value="french">French</option>
+            <option value="swahili">Swahili</option>
+          </select>
+          <select name="level">
+            <option value="level" selected>Level</option>
+            <option value="begineer">Begineer</option>
+            <option value="intermediate">intermediate</option>
+            <option value="advanced">Advanced</option>
+          </select>
+          <select name="course">
+            <option value="course" selected>Course</option>
+            <option value="python">Python</option>
+            <option value="Javascripts">Javascripts</option>
+            <option value="node.js">Node.js</option>
+          </select>
+          <select name="duration">
+            <option value="duration" selected>Duration</option>
+            <option value="3-months">3-months</option>
+            <option value="6-months">6-months</option>
+            <option value="9-months">9-months</option>
+          </select>
+          <select name="skills">
+            <option value="skills" selected>Skills</option>
+            <option value="web-design">Web Design</option>
+            <option value="web-development">Web Development</option>
+            <option value="databases">Databases</option>
+          </select>
+          <div>
+            <a href="course_detail.html">Search</a>
+          </div>
+          <div class="clear-filter">
+            <i class="far">&#xf044;</i>
+            <button type="reset">Clear filter</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

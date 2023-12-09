@@ -12,6 +12,7 @@
   --tertiary-color: #005fdc;
   --white-color: #fff;
   --dark-color: #333;
+  --course-details-main-color: #929599;
   --d-flex: flex;
   --j-content-center: center;
   --j-content-space-between: space-between;
@@ -22,6 +23,7 @@
   --position-absolute: absolute;
   --d-none: none;
   --d-block: block;
+  --cursor-pointer: pointer;
 }
 
 html,
@@ -63,7 +65,7 @@ a {
 .nav-top-left span {
   color: var(--secondary-color);
   font-size: 2rem;
-  cursor: pointer;
+  cursor: var(--cursor-pointer);
 }
 
 .search-bar {
@@ -130,7 +132,7 @@ main {
 }
 
 .main-section-1 {
-  border-bottom: 1px solid #929599;
+  border-bottom: 1px solid var(--course-details-main-color);
   display: var(--d-flex);
   flex-direction: var(--flex-direction-column);
   justify-content: flex-start;
@@ -153,6 +155,11 @@ main {
   padding: 0.5rem;
 }
 
+.main-section-2 p {
+  /* border: 1px solid red; */
+  padding: 1rem;
+}
+
 .main-section-2-1 {
   display: var(--d-flex);
   flex-direction: var(--flex-direction-column);
@@ -171,7 +178,7 @@ main {
 
 .main-section-2-1 .show-learining:hover {
   background-color: #ebf3ff;
-  cursor: pointer;
+  cursor: var(--cursor-pointer);
 }
 
 .main-section-2-1 .show-learining h4 {
@@ -180,7 +187,7 @@ main {
 
 .main-section-2-1 .show-learining .fas,
 .main-section-2-1 .welcome-complete .fas {
-  color: #929599;
+  color: var(--course-details-main-color);
 }
 
 .main-section-2-1 .welcome-complete {
@@ -192,14 +199,18 @@ main {
 
 .main-section-2-1 .welcome-complete:hover {
   background-color: #ebf3ff;
-  cursor: pointer;
+  cursor: var(--cursor-pointer);
   border: 1px solid var(--tertiary-color);
 }
 
 .main-section-2-1 .complete {
   background-color: #e8f2ee;
   color: #257c50;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
+  display: var(--d-flex);
+  justify-content: var(--j-content-center);
+  align-items: var(--j-content-center);
+  gap: 0.2rem;
 }
 
 .main-section-2-1 .complete .fas {
@@ -222,12 +233,12 @@ main {
   justify-content: flex-start;
   align-items: var(--align-items-center);
   padding: 1.5rem 1rem;
-  border-bottom: 1px solid #929599;
+  border-bottom: 1px solid var(--course-details-main-color);
 }
 
 .main-section-3-1:hover {
   background-color: #ebf3ff;
-  cursor: pointer;
+  cursor: var(--cursor-pointer);
   border-top: 1px solid var(--tertiary-color);
 }
 
@@ -236,7 +247,7 @@ main {
 }
 
 .main-section-3-1 .fas {
-  color: #929599;
+  color: var(--course-details-main-color);
 }
 
 .main-section-3-2 {
@@ -250,7 +261,7 @@ main {
 
 .main-section-3-2:hover {
   background-color: #ebf3ff;
-  cursor: pointer;
+  cursor: var(--cursor-pointer);
 }
 
 .main-section-3-2 span .fas {
@@ -265,9 +276,10 @@ main {
 }
 
 .main-section-3-2 .tree-video-container .video {
-  color: #929599;
+  color: var(--course-details-main-color);
   font-weight: 600;
 }
+
 .main-section-3-2 .video span {
   font-size: 30px;
 }
@@ -282,7 +294,7 @@ main {
 
 .main-section-4:hover {
   background-color: #ebf3ff;
-  cursor: pointer;
+  cursor: var(--cursor-pointer);
 }
 
 .main-section-4 .main-section-4-1 {
@@ -294,7 +306,7 @@ main {
 }
 
 .main-section-4 .main-section-4-1 .video {
-  color: #929599;
+  color: var(--course-details-main-color);
   font-weight: 600;
 }
 
@@ -303,8 +315,9 @@ main {
   background-color: var(--tertiary-color);
   color: var(--white-color);
   font-weight: 600;
-  cursor: pointer;
+  cursor: var(--cursor-pointer);
 }
+
 /** Footer **/
 
 footer {
@@ -360,7 +373,7 @@ footer {
     padding: 16px;
     font-size: 16px;
     border: none;
-    cursor: pointer;
+    cursor: var(--cursor-pointer);
   }
 
   .dropdown {

@@ -12,7 +12,7 @@ In response to the dynamic needs of professionals seeking a transition into web 
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://raw.githack.com/enaburekhan/Sabicoders/main/html/index.html)
 
 ## Getting Started
 

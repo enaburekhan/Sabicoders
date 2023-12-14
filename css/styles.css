@@ -481,6 +481,10 @@ footer {
     margin: 0;
   }
 
+  .simple-steps {
+    font-size: 1rem;
+  }
+
   footer {
     flex-direction: var(--flex-direction-column);
   }

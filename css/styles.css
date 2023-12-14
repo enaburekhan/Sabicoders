@@ -59,9 +59,10 @@ a {
   width: 30%;
 }
 
-.nav-top-left span {
+.nav-top-left a {
   color: var(--secondary-color);
-  font-size: 2rem;
+  text-shadow: 1px 1px 1px var(--white-color);
+  font-size: 2.3rem;
   cursor: pointer;
 }
 
@@ -149,7 +150,8 @@ a {
   flex-direction: var(--flex-direction-column);
   justify-content: var(--j-content-center);
   align-items: var(--align-items-center);
-  padding: 2rem 5rem 1rem;
+  padding: 2rem 5rem;
+  gap: 1rem;
 }
 
 .content-container {
@@ -166,16 +168,24 @@ a {
 
 .simple-steps {
   color: var(--primary-color);
+  font-size: 2rem;
+}
+
+.p-content-container {
+  display: var(--d-flex);
+  flex-direction: var(--flex-direction-column);
+  align-items: var(--align-items-center);
+  gap: 1rem;
 }
 
 .p-content {
-  font-size: 18px;
+  font-size: 20px;
   color: var(--dark-color);
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .content-container p {
-  font-size: 14px;
+  font-size: 18px;
   color: var(--dark-color);
   font-weight: 400;
 }
@@ -215,6 +225,11 @@ a {
   justify-content: space-around;
   align-items: var(--align-items-flex-start);
   height: 13vh;
+  gap: 2rem;
+}
+
+.find-course-container p {
+  font-size: 1.3rem;
 }
 
 .find-course-content {
@@ -222,8 +237,11 @@ a {
   font-weight: 500;
 }
 
-.find-course-container button {
+.find-course-container a {
   border: var(--secondary-color);
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  border-radius: 5px;
 }
 
 .fourth-main-section {
@@ -241,9 +259,10 @@ a {
 .fourth-main-section button {
   color: var(--white-color);
   background-color: var(--secondary-color);
-  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  padding: 1rem 1.5rem;
   font-weight: 700;
-  border-radius: 2px;
+  border-radius: 5px;
 }
 
 .fourth-main-section img {

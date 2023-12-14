@@ -263,6 +263,7 @@ a {
   padding: 1rem 1.5rem;
   font-weight: 700;
   border-radius: 5px;
+  border: none;
 }
 
 .fourth-main-section img {
